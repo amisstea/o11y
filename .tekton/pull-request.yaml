@@ -70,7 +70,7 @@ spec:
               workingDir: $(workspaces.workspace.path)
               script: |
                 python -m pip install gitlint
-                gitlint --commits "$(params.target-branch)...HEAD"
+                gitlint
   workspaces:
     - name: workspace
       volumeClaimTemplate:
