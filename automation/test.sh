@@ -5,6 +5,7 @@ main() {
     install_promtool
 
     echo "Running tests"
+    echo "Testing PaC integration"
     ./promtool test rules test/promql/*
 }
 
