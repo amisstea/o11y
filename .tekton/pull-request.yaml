@@ -52,8 +52,6 @@ spec:
               script: cd $(workspaces.workspace.path) && ./automation/test.sh
       - name: run-gitlint
         params:
-          - name: git-url
-            value: $(params.git-url)
           - name: target-branch
             value: $(params.target-branch)
         workspaces:
